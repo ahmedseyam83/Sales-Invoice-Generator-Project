@@ -181,10 +181,7 @@ public class UIFrame extends JFrame implements ActionListener {
     }
 
     private void createInvoice() {
-        itdata[invoicesTables.getRowCount()] += {"", "", "", ""};
-        ((DefaultTableModel) invoicesTables.getModel()).insertRow(invoicesTables.getRowCount(),nrow);
-
-
+        ((DefaultTableModel) invoicesTables.getModel()).insertRow(invoicesTables.getRowCount(),itdata);
     }
 
     private void cancelItems() {
